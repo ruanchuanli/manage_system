@@ -42,68 +42,11 @@
               >
             </el-menu-item-group>
           </el-submenu>
-          <!-- <el-submenu index="2">
-            <template slot="title">
-              <i class="el-icon-help"></i>
-              <span>权限管理</span>
-            </template>
-            <el-menu-item-group>
-              <el-menu-item index="rolelist"
-                ><i class="el-icon-date"></i>角色列表</el-menu-item
-              >
-              <el-menu-item index="permlist"
-                ><i class="el-icon-date"></i>权限列表</el-menu-item
-              >
-            </el-menu-item-group>
-          </el-submenu>
-
-          <el-submenu index="3">
-            <template slot="title">
-              <i class="el-icon-goods"></i>
-              <span>商品管理</span>
-            </template>
-            <el-menu-item-group>
-              <el-menu-item index="goodslist"
-                ><i class="el-icon-date"></i>商品列表</el-menu-item
-              >
-              <el-menu-item index="sortinfo"
-                ><i class="el-icon-date"></i>分类参数</el-menu-item
-              >
-              <el-menu-item index="goodsort"
-                ><i class="el-icon-date"></i>商品分类</el-menu-item
-              >
-            </el-menu-item-group>
-          </el-submenu>
-
-          <el-submenu index="4">
-            <template slot="title">
-              <i class="el-icon-eleme"></i>
-              <span>订单管理</span>
-            </template>
-            <el-menu-item-group>
-              <el-menu-item index="orderslist"
-                ><i class="el-icon-date"></i>订单列表</el-menu-item
-              >
-            </el-menu-item-group>
-          </el-submenu>
-
-          <el-submenu index="5">
-            <template slot="title">
-              <i class="el-icon-date"></i>
-              <span>数据统计</span>
-            </template>
-            <el-menu-item-group>
-              <el-menu-item index="shujulist"
-                ><i class="el-icon-date"></i>数据报表</el-menu-item
-              >
-            </el-menu-item-group>
-          </el-submenu> -->
         </el-menu>
       </el-aside>
       <el-main class="main">
         <el-breadcrumb separator-class="el-icon-arrow-right" style="margin-bottom:20px;font-size:15px">
           <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-          <!-- <el-breadcrumb-item>{{name1}}</el-breadcrumb-item> -->
           <el-breadcrumb-item v-html='name2||"添加商品"'></el-breadcrumb-item>
         </el-breadcrumb>
         <keep-alive>
@@ -125,7 +68,6 @@ export default {
       show: false,
       leftmenu: [],
       name2: ''
-      // path: localStorage.getItem('path') || 'users'
     }
   },
   methods: {
